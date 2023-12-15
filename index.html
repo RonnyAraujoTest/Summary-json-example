@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/estilo.css">
+    <title>Resumen Json</title>
+</head>
+
+<body>
+    <h1>¿Qué es JSON?</h1>
+
+    <p>
+        JSON es un formato de texto que forma parte del sistema de JavaScript y que se deriva de su sintaxis, pero no
+        tiene como objetivo la creación de programas, sino el acceso, almacenamiento e intercambio de datos. Usualmente
+        es conocido como una alternativa al lenguaje XML.
+    </p>
+
+    <p>
+        La sintaxis de JSON funciona de modo similar a JavaScript. Por ejemplo:
+    </p>
+
+    <ul>
+        <li>El arreglo de información se hace mediante claves (keys).</li>
+        <li>La información se separa por comas.</li>
+        <li>Las llaves agrupan objetos.</li>
+        <li>Los corchetes agrupan arreglos de datos.</li>
+    </ul>
+    <p>
+        Sin embargo, JSON se distingue de JavaScript porque sus claves tienen que ser strings (o secuencias de
+        caracteres), mientras que sus valores deben ser strings, números, objetos, arreglos, boleados o null.
+    </p>
+
+    <h2>¿Para qué sirve un archivo JSON?</h2>
+    <p>
+        Un archivo JSON es un documento digital creado en este lenguaje que almacena información organizada, con el fin
+        de hacer más simple su búsqueda y acceso. La ventaja de este formato es que permite obtener código legible para
+        las personas con nombres y valores que funcionan como indicadores de la información que contienen.
+    </p>
+
+    <h2>¿Dónde se utiliza JSON?</h2>
+    <p>
+        Como hemos visto, los archivos JSON permiten obtener un código legible de almacenamiento y también son útiles
+        para manipular la información de un programa a la hora de crear un software.
+    </p>
+    <p>
+        Originalmente, JSON era utilizado únicamente bajo la notación basada en objetos de JavaScript. Actualmente,
+        debido a su popularidad, muchos lenguajes de programación son compatibles con el formato JSON.
+    </p>
+    <p>
+        Los archivos en este formato suelen tener la terminación <strong>.json</strong> y son especialmente provechosos
+        para intercambiar o transferir información a lo largo de diferentes tipos de dispositivos digitales.
+    </p>
+    <p>
+        El caso más común de uso de JSON está en el diseño de sitios web. Al crear páginas en línea queremos asegurarnos
+        de que el sitio lea correctamente la información contenida en el servidor y que la muestre de forma óptima.
+        Además, es deseable que el programador pueda modificar el código durante la marcha para corregir errores.
+    </p>
+    <p>
+        Pero esta no es su única función. Por ejemplo, podemos emplear JSON para la creación de aplicaciones móviles y
+        programas computacionales o incluso para la transferencia de documentos. Esta herramienta es tan versátil que
+        podríamos asegurar que está prácticamente en todos lados.
+    </p>
+    <h2>Ejemplos de archivos JSON</h2>
+    <p>
+        Debido a que JSON es utilizado principalmente por desarrolladores de software, podría pensarse que estos
+        archivos son muy complejos y tediosos. Pero en realidad son relativamente simples en comparación con otros
+        métodos de administración de datos.
+    </p>
+    <p>
+        Veamos algunos ejemplos de cómo luce el código de estos archivos para diferentes tipos de información.
+    </p>
+    <h3>Strings</h3>
+    <p>
+        En JSON los strings siempre deben ir entre comillas dobles y la key debe ser una secuencia de caracteres:
+    </p>
+    <pre>
+    { 
+        “Nombre”:“Juan” 
+    }</pre>
+
+    <h3>Números</h3>
+    <p>
+        En el caso de los números, estos siempre deberán ser enteros o decimales:
+    </p>
+    <pre>
+    { 
+        “Edad”:30 
+    }</pre>
+
+    <h3>Objetos</h3>
+    <p>
+        Por su parte, cuando asignamos objetos a un valor necesitamos emplear signos de llave para contener la
+        información del conjunto. La información contenida debe mantener el mismo formato, lo que da una apariencia
+        mucho más simple y limpia:
+    </p>
+    <pre>
+    { 
+        “Empleado”:{ 
+            “Nombre”:“Juan”, 
+            “Edad”:“30”, 
+            “Ciudad”:“Madrid” 
+        } 
+    }</pre>
+
+    <h3>Arreglos</h3>
+    <p>
+        Los arreglos deben ingresarse de una forma bastante similar al formato y sintaxis de los strings y números. La
+        única diferencia radica en que no utilizaremos signos de llaves, sino corchetes, para contener los datos:
+    </p>
+    <pre>
+    { 
+        “Empleado”:[“Juan”, 30, “Pedro”] 
+    }</pre>
+
+    <h3>Booleanos</h3>
+    <p>
+        Los valores booleanos se utilizan cuando la información solo puede ser verdadera (true) o falsa (false). Por
+        ejemplo, cuando una venta ha sido concretada o se requiere autenticación:
+    </p>
+    <pre>
+    { 
+        “Venta”:true 
+    }</pre>
+
+    <h3>Null</h3>
+    <p>
+        Null es una expresión única que identifica una key a la que aún no se le asigna un valor, pero que no está
+        vacía. Típicamente se emplea para reconocer la falta de valor, por lo que, así como los booleanos, da como
+        resultado null cuando no hay un contenido y datos cuando sí los hay:
+    </p>
+    <pre>
+    { 
+        “telefono”:null 
+    }</pre>
+</body>
+
+</html>
